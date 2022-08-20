@@ -6,7 +6,7 @@ set number
 set showmatch
 "set encoding=utf-8
 set list
-set listchars=eol:§
+set listchars=eol:§,trail:_,nbsp:¶
 set ruler
 set expandtab
 set tabstop=4
@@ -23,5 +23,7 @@ hi Search ctermfg=White
 
 "set cursorcolumn
 "highlight CursorColumn cterm=NONE ctermbg=darkgray
+
+hi SpecialKey ctermfg=darkmagenta
 
 
