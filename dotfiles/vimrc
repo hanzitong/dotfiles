@@ -1,11 +1,13 @@
 
 syntax on
+colorscheme industry
+
 set number
+set showmatch
 "set encoding=utf-8
 set list
 set listchars=eol:§
 set ruler
-
 set expandtab
 set tabstop=4
 
@@ -13,5 +15,13 @@ set hlsearch
 hi Search ctermbg=Cyan
 hi Search ctermfg=White
 
+"highlight Cursor ctermbg=darkcyan ctermfg=black guifg=NONE guibg=Green
+
+"set cursorline
+"highlight CursorLine cterm=NONE ctermbg=darkgray
+"hi CursorLineNr term=bold cterm=NONE ctermfg=227 ctermbg=NONE
+
+"set cursorcolumn
+"highlight CursorColumn cterm=NONE ctermbg=darkgray
 
 
