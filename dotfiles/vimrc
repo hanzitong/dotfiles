@@ -26,4 +26,7 @@ hi Search ctermfg=White
 
 hi SpecialKey ctermfg=darkmagenta
 
+"Wheather clipboard can be used is depends on vim version. here using vim-gtk3
+set clipboard=unnamedplus
+
 
