@@ -6,3 +6,7 @@
 	token = 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
 [core]
 	editor = vim
+
+[alias]
+    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+
