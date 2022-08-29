@@ -14,19 +14,20 @@ set tabstop=4
 set hlsearch
 hi Search ctermbg=Cyan
 hi Search ctermfg=White
+hi SpecialKey ctermfg=darkmagenta
 
+"====== highlight cursor =======
 "highlight Cursor ctermbg=darkcyan ctermfg=black guifg=NONE guibg=Green
-
 "set cursorline
 "highlight CursorLine cterm=NONE ctermbg=darkgray
 "hi CursorLineNr term=bold cterm=NONE ctermfg=227 ctermbg=NONE
-
 "set cursorcolumn
 "highlight CursorColumn cterm=NONE ctermbg=darkgray
 
-hi SpecialKey ctermfg=darkmagenta
 
+"======= enable clipboard ======
 "Wheather clipboard can be used is depends on vim version. here using vim-gtk3
+"$vim --version | grep clipboard  << check command for clipboard support
 set clipboard=unnamedplus
 
 
