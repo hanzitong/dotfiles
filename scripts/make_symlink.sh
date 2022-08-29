@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=(gitconfig vimrc)
+FILES=(gitconfig vimrc tmux.conf)
 echo "start make symlink in (${HOME}) to dotfiles(${FILES})"
 
 for file in ${FILES[@]}
