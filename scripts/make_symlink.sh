@@ -1,15 +1,12 @@
 #!/bin/bash
 
-echo "start make symlink to dotfiles"
+FILES=(gitconfig vimrc)
+echo "start make symlink in (${HOME}) to dotfiles(${FILES})"
 
-
-
-FILES=(gitconfig vimrc tmux.conf)
-
-for file in $FILES[@]
+for file in ${FILES[@]}
 do
     echo "file"
-    ln -s 
+    ln -s $HOME/dotfiles/$file $HOME/.${file}
 done
 
 
