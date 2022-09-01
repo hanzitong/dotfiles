@@ -3,7 +3,7 @@
 	email = han.zitong@rm.is.tohoku.ac.jp
 [github]
 	user = hanzitong
-	token = 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
+	token = ACCESS_TOKEN
 [core]
 	editor = vim
 
