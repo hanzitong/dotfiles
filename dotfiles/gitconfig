@@ -3,10 +3,12 @@
 	email = han.zitong@rm.is.tohoku.ac.jp
 [github]
 	user = hanzitong
-	token = ACCESS_TOKEN
+	# token = ACCESS_TOKEN here. use SSH !!
 [core]
 	editor = vim
 
 [alias]
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/node /tmp/vscode-remote-containers-2cb551e4-17ac-4e8c-9a8d-2233454ce2dd.js git-credential-helper $*; }; f"
