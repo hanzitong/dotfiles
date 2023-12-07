@@ -5,8 +5,12 @@ echo "start unlink files(${FILES[@]})"
 
 for file in ${FILES[@]}
 do
-    echo "unlink ${file}"
     unlink $HOME/.${file}
+    if [ $? -eq 0 ]; then
+        echo "unlink ${file}"
+    else
+        echo "failed to unlink ${file}"
+    fi
 done
 
 
