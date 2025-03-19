@@ -1,0 +1,12 @@
+{
+    "editor.minimap.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "terminal.integrated.enableMultiLinePasteWarning": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "vim.foldfix": true,
+    "cmake.showOptionsMovedNotification": false,
+    "console": "integratedTerminal",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "cline.vsCodeLmModelSelector": {},
+    "workbench.panel.defaultLocation": "right"
+}
