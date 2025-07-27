@@ -13,6 +13,7 @@
         "*.world": "xml"
     },
 
-    "python.defaultInterpreterPath": "/home/han_zitong/python_venv/sse-k12/bin/python"
+    "python.defaultInterpreterPath": "/home/han_zitong/python_venv/sse-k12/bin/python",
+    "redhat.telemetry.enabled": false
 
 }
