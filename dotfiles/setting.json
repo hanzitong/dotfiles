@@ -9,4 +9,7 @@
     "editor.unicodeHighlight.nonBasicASCII": false,
     "cline.vsCodeLmModelSelector": {},
     "workbench.panel.defaultLocation": "right"
+    "files.associations": {
+        "*.world": "xml"
+    }
 }
