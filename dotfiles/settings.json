@@ -10,7 +10,11 @@
     "cline.vsCodeLmModelSelector": {},
     "workbench.panel.defaultLocation": "right",
     "files.associations": {
-        "*.world": "xml"
+        "*.world": "xml",
+        "*.urdf": "xml",
+        "*.xacro": "xml",
+        "*.sdf": "xml",
+        "*.srdf": "xml"
     },
 
     "python.defaultInterpreterPath": "/home/han_zitong/python_venv/sse-k12/bin/python",
