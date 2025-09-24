@@ -5,7 +5,7 @@
 $ source ~/dotfiles/scripts/setup_dotfiles.sh
 $ source ~/dotfiles/scripts/unlink_dotfiles.sh
 
-# IME settings
+# Ubunt IME settings
 frame_work: fcitx5
 input_engine: Mozc(JP), default(US)
 $ sudo apt update && sudo apt install fcitx5 fcitx5-mozc fcitx5-configtool-qt
