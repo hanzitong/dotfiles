@@ -10,10 +10,18 @@
     "cline.vsCodeLmModelSelector": {},
     "workbench.panel.defaultLocation": "right",
     "files.associations": {
-        "*.world": "xml"
+        "*.world": "xml",
+        "*.xacro": "xml",
+        "*.urdf": "xml"
     },
 
     "python.defaultInterpreterPath": "/home/han_zitong/python_venv/sse-k12/bin/python",
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 
 }
