@@ -18,6 +18,12 @@
     },
 
     "python.defaultInterpreterPath": "/bin/python3",
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
 
 }
