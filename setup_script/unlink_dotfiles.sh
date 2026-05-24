@@ -1,40 +1,40 @@
 #!/bin/bash
 
 FILES=(gitconfig vimrc tmux.conf)
-echo "Start unlinking files(${FILES[@]})"
+echo "==== Start unlinking files(${FILES[@]})"
 for file in ${FILES[@]}
 do
     unlink $HOME/.${file}
     if [ $? -eq 0 ]; then
-        echo "succeded to unlink ${file}"
+        echo "[SUCCESS] ${file}"
     else
-        echo "failed to unlink ${file}"
+        echo "[FAIL] ${file}"
     fi
 done
 
 
 VSCODE_SETTINGS=(settings.json keybindings.json)
-echo "Start unlinking (${VSCODE_SETTINGS[@]})"
+echo "==== Start unlinking (${VSCODE_SETTINGS[@]})"
 for vscode_setting in ${VSCODE_SETTINGS[@]}
 do
     unlink $HOME/.config/Code/User/$vscode_setting
     if [ $? -eq 0 ]; then
-        echo "${vscode_setting} success"
+        echo "[SUCCESS] ${vscode_setting}"
     else
-        echo "${vscode_setting} fail"
+        echo "[FAIL] ${vscode_setting}"
     fi
 done
 
 
 VSCODE_SNIPPETS=(cpp.json)
-echo "Start unlinking (${VSCODE_SNIPPETS[@]})"
+echo "==== Start unlinking (${VSCODE_SNIPPETS[@]})"
 for vscode_snippet in ${VSCODE_SNIPPETS[@]}
 do
     unlink $HOME/.config/Code/User/snippets/$vscode_snippet
     if [ $? -eq 0 ]; then
-        echo "${vscode_snippet} success"
+        echo "[SUCCESS] ${vscode_snippet}"
     else
-        echo "${vscode_snippet} fail"
+        echo "[FAIL] ${vscode_snippet}"
     fi
 done
 
