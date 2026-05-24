@@ -30,7 +30,7 @@ VSCODE_SNIPPETS=(cpp.json)
 echo "==== Start making symlink of (${VSCODE_SNIPPETS[@]})"
 for vscode_snippet in ${VSCODE_SNIPPETS[@]}
 do
-    ln -s $HOME/dotfiles/dotfiles/vscode/snippets/$vscode $HOME/.config/Code/User/snippets/$vscode_snippet
+    ln -s $HOME/dotfiles/dotfiles/vscode/snippets/$vscode_snippet $HOME/.config/Code/User/snippets/$vscode_snippet
     if [ $? -eq 0 ]; then
         echo "[SUCCESS] ${vscode_snippet}"
     else
