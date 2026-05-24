@@ -4,6 +4,10 @@
         "key": "ctrl+t",
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "composerMode.agent"
     }
 ]
 
