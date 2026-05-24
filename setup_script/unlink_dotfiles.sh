@@ -1,8 +1,7 @@
 #!/bin/bash
 
 FILES=(gitconfig vimrc tmux.conf)
-echo "start unlink files(${FILES[@]})"
-
+echo "Start unlinking files(${FILES[@]})"
 for file in ${FILES[@]}
 do
     unlink $HOME/.${file}
@@ -14,32 +13,28 @@ do
 done
 
 
-VSCODE_FILES=(settings.json keybindings.json)
-echo "start make symlink of (${VSCODE_FILES[@]})"
-
-for vscode_file in ${VSCODE_FILES[@]}
+VSCODE_SETTINGS=(settings.json keybindings.json)
+echo "Start unlinking (${VSCODE_SETTINGS[@]})"
+for vscode_setting in ${VSCODE_SETTINGS[@]}
 do
-    unlink $HOME/.config/Code/User/$vscode_file
+    unlink $HOME/.config/Code/User/$vscode_setting
     if [ $? -eq 0 ]; then
-        echo "${vscode_file} success"
+        echo "${vscode_setting} success"
     else
-        echo "${vscode_file} fail"
+        echo "${vscode_setting} fail"
     fi
 done
 
 
-# SETTINGSJSON=(settings.json)
-# echo "start unlink (${SETTINGSJSON[@]})"
-
-# for json in ${SETTINGSJSON[@]}
-# do
-#     unlink $HOME/.config/Code/User/settings.json
-#     if [ $? -eq 0 ]; then
-#         echo "succeded to unlink ${json}"
-#     else
-#         echo "failed to unlink ${json}"
-#     fi
-# done
-
-
+VSCODE_SNIPPETS=(cpp.json)
+echo "Start unlinking (${VSCODE_SNIPPETS[@]})"
+for vscode_snippet in ${VSCODE_SNIPPETS[@]}
+do
+    unlink $HOME/.config/Code/User/snippets/$vscode_snippet
+    if [ $? -eq 0 ]; then
+        echo "${vscode_snippet} success"
+    else
+        echo "${vscode_snippet} fail"
+    fi
+done
 
