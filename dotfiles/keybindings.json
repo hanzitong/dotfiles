@@ -4,6 +4,11 @@
         "key": "ctrl+t",
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+        "when": "!isAuxiliaryWindowFocusedContext"
     }
 ]
 

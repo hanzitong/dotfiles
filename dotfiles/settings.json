@@ -2,7 +2,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "editor.minimap.enabled": false,
     "git.openRepositoryInParentFolders": "never",
-    "terminal.integrated.enableMultiLinePasteWarning": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "vim.foldfix": true,
     "cmake.showOptionsMovedNotification": false,
     "console": "integratedTerminal",
@@ -14,14 +14,24 @@
         "*.xacro": "xml",
         "*.urdf": "xml"
     },
-
-    "python.defaultInterpreterPath": "/home/han_zitong/python_venv/sse-k12/bin/python",
+    "python.defaultInterpreterPath": "/home/nachi/.local/bin/python3.11",
     "redhat.telemetry.enabled": false,
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
         "markdown": false,
         "scminput": false
-    }
-
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.editContext": false,
+    "python.createEnvironment.trigger": "off",
+    "hediet.vscode-drawio.resizeImages": null,
+    "jupyter.askForKernelRestart": false,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "claudeCode.preferredLocation": "panel",
+    // "hediet.vscode-drawio.autoExport": true,
+    // "hediet.vscode-drawio.exportFormat": "svg",
+    // "hediet.vscode-drawio.exportFileExtension": ".svg",
+    // "hediet.vscode-drawio.exportPath": "./"
 }
