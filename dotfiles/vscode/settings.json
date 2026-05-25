@@ -11,10 +11,12 @@
     "workbench.panel.defaultLocation": "right",
     "files.associations": {
         "*.world": "xml",
+        "*.urdf": "xml",
         "*.xacro": "xml",
-        "*.urdf": "xml"
+        "*.sdf": "xml",
+        "*.srdf": "xml"
     },
-    "python.defaultInterpreterPath": "/home/nachi/.local/bin/python3.11",
+    "python.defaultInterpreterPath": "/bin/python3",
     "redhat.telemetry.enabled": false,
     "github.copilot.enable": {
         "*": false,
@@ -34,4 +36,5 @@
     // "hediet.vscode-drawio.exportFormat": "svg",
     // "hediet.vscode-drawio.exportFileExtension": ".svg",
     // "hediet.vscode-drawio.exportPath": "./"
+
 }
