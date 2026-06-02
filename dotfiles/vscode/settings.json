@@ -36,5 +36,6 @@
     // "hediet.vscode-drawio.exportFormat": "svg",
     // "hediet.vscode-drawio.exportFileExtension": ".svg",
     // "hediet.vscode-drawio.exportPath": "./"
+    "mermaidChart.showGenerateDiagramCodeLens": false,
 
 }
