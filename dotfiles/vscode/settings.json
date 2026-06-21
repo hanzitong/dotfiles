@@ -1,17 +1,32 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
     "redhat.telemetry.enabled": false,
+    "window.title": "${activeEditorLong}",
+    "window.density.editorTabHeight": "compact",
     "explorer.confirmDragAndDrop": false,
     "editor.minimap.enabled": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.semanticHighlighting.enabled": "configuredByTheme",
     "editor.editContext": false,
+    "editor.glyphMargin": false,
+    "editor.folding": false,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "console": "integratedTerminal",
+    // "console": "integratedTerminal",
+    "workbench.edigor.labelFormat": "long",
+    "workbench.editor.warpTabs": true,
     "workbench.panel.defaultLocation": "right",
     "workbench.tree.renderIndentGuides": "always",
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.cursorBlinking": true,
     "workbench.colorCustomizations": {
-        "tree.indentGuidesStroke": "#3d742c",
-        "tree.inactiveIndentGuidesStroke": "#449984"
+        "editor.background": "#000000",
+        "editorGroup.emptyBackground": "#746e6e",
+        "sideBar.background": "#000000",
+        "statusBar.background": "#213041",
+        "terminal.background": "#000000",
+        "terminal.foreground": "#a6aaac",
+        "tree.indentGuidesStroke": "#3dd9f5",
+        "tree.inactiveIndentGuidesStroke": "#47688f"
     },
 
     "git.openRepositoryInParentFolders": "always",
@@ -38,6 +53,7 @@
     "claudeCode.preferredLocation": "panel",
 
     "cmake.showOptionsMovedNotification": false,
+
     "python.defaultInterpreterPath": "/bin/python3",
     "python.createEnvironment.trigger": "off",
     "jupyter.askForKernelRestart": false,
@@ -48,5 +64,6 @@
     // "hediet.vscode-drawio.exportFileExtension": ".svg",
     // "hediet.vscode-drawio.exportPath": "./"
     "mermaidChart.showGenerateDiagramCodeLens": false,
+    "workbench.colorTheme": "Visual Studio Dark - C++",
  
 }
