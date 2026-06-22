@@ -1,0 +1,12 @@
+// Cursor 用 keybindings (VSCode 用は dotfiles/vscode/keybindings.json)
+[
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    }
+]
