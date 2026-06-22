@@ -21,12 +21,14 @@
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.cursorBlinking": true,
     "workbench.colorCustomizations": {
-        // "editor.background": "#1e2327",
+        // "editor.background": "#30383f7d",
+        "editor.background": "#282f3c",
         "editorGroup.emptyBackground": "#746e6e",
         "sideBar.background": "#282f3c",
         "statusBar.background": "#36404b",
         "statusBar.noFolderBackground": "#5c6a7a",
-        "terminal.background": "#000000",
+        // "terminal.background": "#242527",
+        "terminal.background": "#282f3c",
         "terminal.foreground": "#a6aaac",
         "tree.indentGuidesStroke": "#3dd9f5",
         "tree.inactiveIndentGuidesStroke": "#47688f"

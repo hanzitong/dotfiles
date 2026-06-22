@@ -10,11 +10,18 @@
         "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
         "when": "!isAuxiliaryWindowFocusedContext"
     },
-    // {
-    //     "key": "ctrl+i",
-    //     "command": "composerMode.agent"
-    // }
-]
 
+    {
+        "key": "ctrl+l",    // "key": "ctrl+escape",
+        "command": "claude-vscode.focus",
+        "when": "editorTextFocus && !config.claudeCode.useTerminal"
+    },
+    {
+        "key": "ctrl+escape",    // "key": "alt+k",
+        "command": "claude-vscode.insertAtMention",
+        "when": "editorTextFocus"
+    },
+   
+]
 
 
