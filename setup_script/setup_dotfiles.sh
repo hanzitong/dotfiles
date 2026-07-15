@@ -17,6 +17,10 @@ VSCODE_SETTINGS=(settings.json keybindings.json)
 echo "==== Start making symlink of (${VSCODE_SETTINGS[@]})"
 for vscode_setting in ${VSCODE_SETTINGS[@]}
 do
+    if [ ! -d $HOME/.config/Code/User ]; then
+        mkdir -p $HOME/.config/Code/User
+    fi
+
     ln -s $HOME/dotfiles/dotfiles/vscode/$vscode_setting $HOME/.config/Code/User/$vscode_setting
     if [ $? -eq 0 ]; then
         echo "[SUCCESS] ${vscode_setting}"
@@ -30,6 +34,10 @@ VSCODE_SNIPPETS=(cpp.json)
 echo "==== Start making symlink of (${VSCODE_SNIPPETS[@]})"
 for vscode_snippet in ${VSCODE_SNIPPETS[@]}
 do
+    if [ ! -d $HOME/.config/Code/User/snippets ]; then
+        mkdir -p $HOME/.config/Code/User/snippets
+    fi
+
     ln -s $HOME/dotfiles/dotfiles/vscode/snippets/$vscode_snippet $HOME/.config/Code/User/snippets/$vscode_snippet
     if [ $? -eq 0 ]; then
         echo "[SUCCESS] ${vscode_snippet}"
