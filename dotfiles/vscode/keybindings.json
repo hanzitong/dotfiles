@@ -1,9 +1,8 @@
 
 [
     {
-        "key": "ctrl+t",
+        "key": "ctrl+b",
         "command": "workbench.action.terminal.focus",
-        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+alt+s",
