@@ -26,7 +26,7 @@ do
 done
 
 
-VSCODE_SNIPPETS=(cpp.json)
+VSCODE_SNIPPETS=(cpp.json cmake.json)
 echo "==== Start unlinking (${VSCODE_SNIPPETS[@]})"
 for vscode_snippet in ${VSCODE_SNIPPETS[@]}
 do
