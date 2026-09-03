@@ -30,7 +30,7 @@ do
 done
 
 
-VSCODE_SNIPPETS=(cpp.json)
+VSCODE_SNIPPETS=(cpp.json cmake.json)
 echo "==== Start making symlink of (${VSCODE_SNIPPETS[@]})"
 for vscode_snippet in ${VSCODE_SNIPPETS[@]}
 do
