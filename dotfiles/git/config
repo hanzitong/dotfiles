@@ -16,7 +16,7 @@
 	path = ./gitconfig-han-github
 
 # Han's GitHub accessed with ssh
-[includeIf "hasconfig:remote.*.url:git@github.com:*/*"]
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
 	path = ./gitconfig-han-github
 
 # Nachi's Gitea accessed with http
