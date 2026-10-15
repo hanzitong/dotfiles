@@ -2,6 +2,7 @@
     "normal_cpp_template": {
         "prefix": "cmakelists",
         "body": [
+            "",
             "cmake_minimum_required(VERSION 3.16)",
             "",
             "project($1)",
@@ -10,18 +11,18 @@
             "set(CMAKE_CXX_STANDARD_REQUIRED ON)",
             "set(CMAKE_CXX_EXTENSIONS OFF)",
             "",
-            "add_executable($1",
+            "add_executable($2",
             "",
             ")",
-            "target_link_libraries($1",
+            "target_link_libraries($2",
             "",
             ")",
             "",
-            "target_include_directories($1 PRIVATE",
-            "  include",
+            "target_include_directories($2",
+            "   \tPRIVATE",
+            "   \tinclude",
             ")",
             "",
-            "$0"
         ],
         "description": "normal CMakeLists.txt snippet"
     }
