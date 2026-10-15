@@ -10,7 +10,7 @@
     "editor.semanticHighlighting.enabled": "configuredByTheme",
     "editor.editContext": false,
     "editor.glyphMargin": false,
-    "editor.folding": false,
+    "editor.folding": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     // "console": "integratedTerminal",
     // "workbench.colorTheme": "Visual Studio Dark - C++",
@@ -45,7 +45,10 @@
         "*.urdf": "xml",
         "*.xacro": "xml",
         "*.sdf": "xml",
-        "*.srdf": "xml"
+        "*.srdf": "xml",
+        "gitconfig-*": "properties",
+        ".gitconfig*": "properties",
+        "config": "properties",
     },
 
     "github.copilot.enable": {
