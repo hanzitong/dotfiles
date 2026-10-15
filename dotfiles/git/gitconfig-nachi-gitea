@@ -1,0 +1,13 @@
+
+[user]	# used in commit auther
+	# name = 1254208
+	name = HanZitong
+	email = han.zitong.lj@nachi.com
+
+[credential "http://192.168.137.1.:8082"]
+	username = 1254208
+	helper = "cache --timeout=99999"
+	## Gitea server's SSH port is not opened..... so use ACCESS_TOKEN.
+	# token = put ACCESS_TOKEN here. or use SSH !!
+
+

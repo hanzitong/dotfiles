@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=(gitconfig vimrc tmux.conf)
+FILES=(vimrc tmux.conf)
 echo "==== Start unlinking files(${FILES[@]})"
 for file in ${FILES[@]}
 do
@@ -11,6 +11,22 @@ do
         echo "[FAIL] ${file}"
     fi
 done
+
+# GIT_SETTINGS=(config gitconfig-han-github gitconfig-nachi-gitea)
+GIT_SETTINGS=(git)
+echo "==== Start unlinking (${GIT_SETTINGS[@]})"
+for git_setting in ${GIT_SETTINGS[@]}
+do
+    # unlink $HOME/dotfiles/dotfiles/git/${git_setting} $HOME/.config/git/${git_setting}
+    unlink $HOME/.config/${git_setting}
+    if [ $? -eq 0 ]; then
+        echo "[SUCCESS] ${git_setting}"
+    else
+        echo "[FAIL] ${git_setting}"
+    fi
+done
+
+
 
 
 VSCODE_SETTINGS=(settings.json keybindings.json)

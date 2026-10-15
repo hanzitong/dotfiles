@@ -1,0 +1,32 @@
+
+# This file is the gitconfig !!!!!
+# This file(config) should be put at ~/.config/git/config ,then it will be recognized as gitconfig
+#
+# MEMO:
+# This file structure is for resolving relative path.
+# Using relative path is for using if-condition.
+#
+
+
+[user]
+	useConfigOnly = true
+
+# Han's GitHub accessed with https
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+	path = ./gitconfig-han-github
+
+# Han's GitHub accessed with ssh
+[includeIf "hasconfig:remote.*.url:git@github.com:*/*"]
+	path = ./gitconfig-han-github
+
+# Nachi's Gitea accessed with http
+[includeIf "hasconfig:remote.*.url:http://192.168.137.1:8082/**"]
+	path = ./gitconfig-nachi-gitea
+
+
+[core]
+	editor = vim
+
+[alias]
+    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+

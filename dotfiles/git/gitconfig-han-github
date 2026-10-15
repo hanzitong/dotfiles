@@ -1,0 +1,13 @@
+
+[user]
+	name = Han_Zitong
+	# email = han.zitong@rm.is.tohoku.ac.jp
+	email = hanzitong1218@gmail.com
+
+## HTTPS authentication
+[credential "https://github.com"]
+	username = hanzitong
+	# token = put ACCESS_TOKEN here. or use SSH !!
+
+## SSH authentication
+# [credential] setting is usually not used in SSH authentication.

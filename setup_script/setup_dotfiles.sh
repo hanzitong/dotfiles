@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=(gitconfig vimrc tmux.conf)
+FILES=(vimrc tmux.conf)
 echo "==== Start making symlink in (${HOME}) to dotfiles(${FILES[@]})"
 for file in ${FILES[@]}
 do
@@ -9,6 +9,26 @@ do
         echo "[SUCCESS] ${file}"
     else
         echo "[FAIL] ${file}"
+    fi
+done
+
+
+# GIT_SETTINGS=(config gitconfig-han-github gitconfig-nachi-gitea)
+GIT_SETTINGS=(git)
+echo "==== Start making symlink of (${GIT_SETTINGS[@]})"
+for git_setting in ${GIT_SETTINGS[@]}
+do
+    if [ ! -d $HOME/.config/ ]; then
+        # mkdir -p $HOME/.config/git/
+        mkdir -p $HOME/.config/
+    fi
+
+    # ln -s $HOME/dotfiles/dotfiles/git/${git_setting} $HOME/.config/git/${git_setting}
+    ln -sT $HOME/dotfiles/dotfiles/${git_setting} $HOME/.config/${git_setting}
+    if [ $? -eq 0 ]; then
+        echo "[SUCCESS] ${git_setting}"
+    else
+        echo "[FAIL] ${git_setting}"
     fi
 done
 
