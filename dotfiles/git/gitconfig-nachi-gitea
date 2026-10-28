@@ -13,7 +13,7 @@
 	# helper = "cache --timeout=99999"
 
 	# --- access_token authentication ---
-	helper = "store --file ~/.config/git/access_token"
+	helper = "store --file ~/.config/git/access_token_gitea"
 
 	# --- SSH authentication ---
 	# Cannot use ssh.
