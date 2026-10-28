@@ -3,11 +3,17 @@
     {
         "key": "ctrl+b",
         "command": "workbench.action.terminal.focus",
+        // "when": always if commentted out
     },
     {
-        "key": "ctrl+alt+s",
-        "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
-        "when": "!isAuxiliaryWindowFocusedContext"
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "!explorerViewletVisible",
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.closeSidebar",
+        "when": "explorerViewletVisible",
     },
 
     {
