@@ -22,6 +22,12 @@
     // "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.cursorBlinking": true,
+    // Commands handled by VSCode instead of the shell, even when the terminal has focus
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.view.explorer",          // alt+e
+        "workbench.action.closeSidebar",    // alt+e
+        "workbench.action.closePanel",      // alt+b
+    ],
     "workbench.colorCustomizations": {
         // "editor.background": "#000000",
         "editorGroup.emptyBackground": "#746e6e",

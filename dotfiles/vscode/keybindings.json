@@ -6,12 +6,31 @@
         // "when": always if commentted out
     },
     {
+        "key": "alt+b",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "!terminalViewShowing",
+    },
+    {
+        "key": "alt+b",
+        "command": "workbench.action.closePanel",
+        "when": "terminalViewShowing",
+    },
+
+    {
         "key": "ctrl+e",
+        "command": "workbench.files.action.focusFilesExplorer",
+        // Also when the explorer has focus: does nothing, and keeps the default ctrl+e (quickOpen) from running
+        "when": "explorerViewletVisible",
+    },
+    {
+        // "key": "ctrl+e",
+        "key": "alt+e",
         "command": "workbench.view.explorer",
         "when": "!explorerViewletVisible",
     },
     {
-        "key": "ctrl+e",
+        // "key": "ctrl+e",
+        "key": "alt+e",
         "command": "workbench.action.closeSidebar",
         "when": "explorerViewletVisible",
     },
