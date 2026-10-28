@@ -19,6 +19,7 @@
     "workbench.panel.defaultLocation": "bottom",
     "workbench.panel.alignment": "center",
     "workbench.tree.renderIndentGuides": "always",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     // "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.cursorBlinking": true,
