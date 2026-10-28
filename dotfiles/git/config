@@ -20,7 +20,7 @@
 	path = ./gitconfig-han-github
 
 # Nachi's Gitea accessed with http
-[includeIf "hasconfig:remote.*.url:http://192.168.137.1:8082/**"]
+[includeIf "hasconfig:remote.*.url:http://10.42.0.125:8082/**"]
 	path = ./gitconfig-nachi-gitea
 
 

@@ -4,7 +4,8 @@
 	name = Han
 	email = zitong.han.lj@nachi.com
 
-[credential "http://192.168.137.1:8082"]
+# [credential "http://192.168.137.1:8082"]
+[credential "http://10.42.0.125:8082"]
 	username = 1254208
 
 	# --- password authenticaton ---
