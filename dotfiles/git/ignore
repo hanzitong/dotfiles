@@ -1,3 +1,4 @@
+# This file is for setting which file to ignore over the all git repositories.
 
 # Personal Claude Code settings (command permission, etc)
 **/.claude/settings.local.json
