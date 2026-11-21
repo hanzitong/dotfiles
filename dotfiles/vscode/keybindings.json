@@ -45,6 +45,19 @@
         "command": "claude-vscode.insertAtMention",
         "when": "editorTextFocus"
     },
+
+    /* navigation function */
+    // F12: (default) go to definition
+    {
+        "key": "f11",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "f10",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
    
 ]
 
