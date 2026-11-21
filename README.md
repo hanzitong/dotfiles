@@ -30,4 +30,12 @@ input_engine: Mozc(JP), default(US)
 # tmux
 - command_line_tool: xclip  
     - This is always needed when using tmux
-`$ sudo apt updat && sudo apt install tmux xclip`
+`$ sudo apt update && sudo apt install tmux xclip`
+
+# Claude Code (~/.claude)
+- managed in `dotfiles/claude/`: `settings.json`, `rules/`, `skills/<skill>/`, `agents/`, `output-styles/`, `hooks/` (`*.py` and `README.md`)
+- project-specific settings go to each project's own `.claude/`
+- `setup_dotfiles.sh` links these items one by one. Do not link the whole `~/.claude`:
+  Claude Code writes credentials, history and caches there.
+- not managed: `.credentials.json`, `history.jsonl`, `sessions/`, `cache/`, `plugins/`, `agent-memory/`, `projects/`
+    - `projects/<dir>/memory/` is not portable: the directory name is made from the absolute path (e.g. `-home-<user>`)

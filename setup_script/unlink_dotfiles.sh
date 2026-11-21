@@ -58,7 +58,7 @@ done
 # Unlink the same Claude Code items that setup_dotfiles.sh linked.
 CLAUDE_DOTFILES_DIR=$HOME/dotfiles/dotfiles/claude
 echo "==== Start unlinking Claude Code settings (${CLAUDE_DOTFILES_DIR})"
-for claude_source_path in "$CLAUDE_DOTFILES_DIR"/CLAUDE.md "$CLAUDE_DOTFILES_DIR"/settings.json "$CLAUDE_DOTFILES_DIR"/rules/*.md "$CLAUDE_DOTFILES_DIR"/skills/* "$CLAUDE_DOTFILES_DIR"/agents/*.md "$CLAUDE_DOTFILES_DIR"/output-styles/*.md
+for claude_source_path in "$CLAUDE_DOTFILES_DIR"/CLAUDE.md "$CLAUDE_DOTFILES_DIR"/settings.json "$CLAUDE_DOTFILES_DIR"/rules/*.md "$CLAUDE_DOTFILES_DIR"/skills/* "$CLAUDE_DOTFILES_DIR"/agents/*.md "$CLAUDE_DOTFILES_DIR"/output-styles/*.md "$CLAUDE_DOTFILES_DIR"/hooks/*.py "$CLAUDE_DOTFILES_DIR"/hooks/README.md
 do
     claude_relative_path=${claude_source_path#"$CLAUDE_DOTFILES_DIR"/}
     unlink "$HOME/.claude/$claude_relative_path"
