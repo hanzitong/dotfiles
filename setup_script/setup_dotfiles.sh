@@ -66,3 +66,24 @@ do
     fi
 done
 
+
+# Link Claude Code settings item by item, not the whole ~/.claude:
+# Claude Code itself writes credentials, history and caches into ~/.claude.
+# Rules, skills, agents and output styles are found by glob,
+# so a new file added to the repo is linked without editing this script.
+CLAUDE_DOTFILES_DIR=$HOME/dotfiles/dotfiles/claude
+echo "==== Start making symlink of Claude Code settings (${CLAUDE_DOTFILES_DIR})"
+for claude_source_path in "$CLAUDE_DOTFILES_DIR"/CLAUDE.md "$CLAUDE_DOTFILES_DIR"/settings.json "$CLAUDE_DOTFILES_DIR"/rules/*.md "$CLAUDE_DOTFILES_DIR"/skills/* "$CLAUDE_DOTFILES_DIR"/agents/*.md "$CLAUDE_DOTFILES_DIR"/output-styles/*.md
+do
+    claude_relative_path=${claude_source_path#"$CLAUDE_DOTFILES_DIR"/}
+    mkdir -p "$(dirname "$HOME/.claude/$claude_relative_path")"
+
+    # -T: fail instead of creating the link inside an existing directory
+    ln -sT "$claude_source_path" "$HOME/.claude/$claude_relative_path"
+    if [ $? -eq 0 ]; then
+        echo "[SUCCESS] ${claude_relative_path}"
+    else
+        echo "[FAIL] ${claude_relative_path}"
+    fi
+done
+
