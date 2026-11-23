@@ -23,6 +23,8 @@
     // "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.cursorStyle": "block",
     "terminal.integrated.cursorBlinking": true,
+    // Disable VSCode's own terminal suggest widget so Tab goes to the shell's completion
+    "terminal.integrated.suggest.enabled": false,
     // Commands handled by VSCode instead of the shell, even when the terminal has focus
     "terminal.integrated.commandsToSkipShell": [
         "workbench.view.explorer",          // alt+e
@@ -79,5 +81,6 @@
     // "hediet.vscode-drawio.exportFileExtension": ".svg",
     // "hediet.vscode-drawio.exportPath": "./"
     "mermaidChart.showGenerateDiagramCodeLens": false,
+    "explorer.confirmDelete": false,
  
 }

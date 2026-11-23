@@ -58,7 +58,19 @@
         "command": "workbench.action.navigateForward",
         "when": "canNavigateForward"
     },
-   
+
+    /* solve shortcut conflicts between vscode and shell */
+    {
+        "key": "ctrl+space",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "config.terminal.integrated.enableWin32InputMode && terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+    },
+    {
+        // Ctrl+M in the terminal turned on "Tab Moves Focus" mode, so Tab stopped reaching the shell
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode",
+    },
+
 ]
 
 
